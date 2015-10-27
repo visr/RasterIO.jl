@@ -112,6 +112,7 @@ function write_raster(raster::Raster,destination::ASCIIString,drivername::ASCIIS
         end
     end
     GDALClose(dstdataset)
+    nothing
 end
 
 ## Utility functions
