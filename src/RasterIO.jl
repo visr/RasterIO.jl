@@ -117,7 +117,7 @@ end
 ## Utility functions
 
 function driver_list()
-    driverlist = String[]
+    driverlist = ASCIIString[]
     for i = 0:GDALGetDriverCount()-1
         driver = GDALGetDriver(i)
         if driver != C_NULL

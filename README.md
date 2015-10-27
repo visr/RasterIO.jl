@@ -27,7 +27,7 @@ A raster type consisting of a pointer to the raster dataset (not to the individu
 
 ## Provided Functions ##
 
-	open_raster(input::String,access::Int32=GA_ReadOnly)
+	open_raster(input::AbstractString,access::Int32=GA_ReadOnly)
 
 Opens the specified raster file using GDAL and returns a Raster. Access is 0 for ReadOnly and 1 for Update, or use GA\_ReadOnly and GA\_Update. Default passed when you called `open_raster(input)` is GA_ReadOnly. This has recently been changed to always import every band from a raster, making it more generally applicable.
 
