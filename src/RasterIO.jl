@@ -82,7 +82,7 @@ function open_raster(input::ASCIIString, access::Int=GA_ReadOnly)
     return map
 end
 
-function write_raster(raster::Raster,destination::ASCIIString,drivername::ASCIIString, GDALdatatype::Int)
+function write_raster(raster::Raster,destination::AbstractString,drivername::AbstractString, GDALdatatype::Int)
     if !driver_test(drivername)
         error("Requested driver not present")
     end
